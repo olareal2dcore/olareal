@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =device width initial scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <h1>
+                Job Application Form
+            </h1>
+            <p>
+                Fill Out This Form to Apply
+            </p>
+        </h1>
+    </header>
+    <main>
+        <form action="submit.html" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full name">
+                    Full Name
+                </label>
+                <input 
+                id="full name"
+                name="fullname"
+                type="text"
+                placeholder="Adekunle Hammed"
+                required>
+                <label for="email">
+                    Email
+                </label>
+                <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="hammedadekunle@gmail.com"
+                required>
+                <label for="phone-number">
+                    phone-number
+                </label>
+                <input
+                id="phone-number"
+                name="phone number"
+                type="tel"
+                placeholder="+234-809-484-1216"
+                required
+                pattern="(0-9) {3} - (0-9) {3} - (0-9) {3} - (0-9) {4}">
+                <label for="residential adress">
+                    Residential Adress
+                </label>
+                <input
+                id="residential adress"
+                name="Adress"
+                type="text"
+                required
+                placeholder="1,peace estate command lagos state">
+                <label for="Linkedin ">
+                    linkedin profile url(option) 
+                </label>
+                <input
+                id="Linkedin"
+                name="website"
+                type="url"
+                placeholder="htpp://linkedin.com/in/sahee"
+                pattern="htpp://linkedin.com/">
+                <label for="potfolio">
+                    potfolio website(optional)
+                </label>
+                <input
+                id="potfolio"
+                name="website"
+                type="url"
+                placeholder="http://potfolio.com">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Position Details
+                </legend>
+                <label for="position">
+                    Position Applying For
+                </label>
+                <select 
+                id="position"
+                name="position"
+                required>
+                <option value="">-- please select--</option>
+                <option value="junior dev">Junior Developer</option>
+                <option value="Frot-End">Frot-End Developer</option>
+                <option value="Back-End">Back-End Developer</option>
+                <option value="Full-Stack">Full-Stack Developer</option>
+                <option value="deesigner">Designer</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    How Do You Hear About Us?
+                </legend>
+                <label for="linkedin">
+                    Linkedin
+                </label>
+                <input 
+                id="Linkedin"
+                name="source"
+                value="linkedin"
+                type="radio">
+                <label for="job board">
+                    Job Board
+                </label>
+                <input 
+                id="job board"
+                name="source"
+                value="job board"
+                type="radio">
+                <label for="company website">
+                    company website
+                </label>
+                <input 
+                id="company website"
+                name="source"
+                value="company website"
+                type="radio">
+                <label for="Referral">
+                    Referrals
+                </label>
+                <input 
+                id="Referrals"
+                name="source"
+                value="referrals"
+                type="radio">
+                <label for="Others">
+                    Others
+                </label>
+                <input 
+                id="Others"
+                name="source"
+                value="others"
+                type="radio">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Employment type Prefrence
+                </legend>
+                <label for="full-tmie">
+                    full-tmie
+                </label>
+                <input 
+                id="full-tmie"
+                name="Employment type"
+                value="fulltime"
+                type="radio"
+                required>
+                <label for="part-time">
+                    part-time
+                </label>
+                <input 
+                id="part-time"
+                name="Employment type"
+                value="part-time"
+                type="radio">
+                <label for="contract">
+                    contract
+                </label>
+                <input 
+                id="contract"
+                name="Employment type"
+                value="contract"
+                type="radio">
+                <label for="internship">
+                    Internship
+                </label>
+                <input 
+                id="internship"
+                name="Employment type"
+                value="internship"
+                type="radio">
+                <label for="Others">
+                    Others
+                </label>
+                <input 
+                id="Others"
+                name="Employment type"
+                value="others"
+                type="radio">
+                <label for="Earliest start date">
+                    Earliest start date
+                </label>
+                <input
+                id="Earliest start date"
+                name="Earliest starting date"
+                type="date"
+                required>
+                <label>
+                    Salary Expectation Range(optional)
+                </label>
+                <input
+                id="salary expectation range"
+                name="salary expectation"
+                type="number"
+                required
+                min="20000"
+                max="200000">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Education
+                </legend>
+                <label for="levels of education">
+                    Highest Level of Education
+                </label>
+                <select 
+                id="level of education"
+                name="level of education"
+                required>
+                <option value="">-- please select--</option>
+                <option>High school</option>
+                <option>Asssociate's</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PhD</option>
+            </select>
+            <label for="Experience">
+                    Years of experience
+                </label>
+                <input
+                id="Experience"
+                name="experience"
+                type="number"
+                min="0"
+                max="50"
+                required>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Programming Language Known? (select all that applies)
+                </legend>
+                <label for="html">
+                    HTML
+                </label>
+                <input
+                id="html"
+                name="html"
+                type="checkbox"
+                required>
+                <label for="css">
+                    CSS
+                </label>
+                <input
+                id="css"
+                name="css"
+                type="checkbox">
+                <label for="javascript">
+                    Javascript
+                </label>
+                <input
+                id="javascript"
+                name="javascript"
+                type="checkbox">
+                <label for="python">
+                    Python
+                </label>
+                <input
+                id="python"
+                name="python"
+                type="checkbox">
+                <label for="java">
+                    Java
+                </label>
+                <input
+                id="java"
+                name="java"
+                type="checkbox">
+                <label for="c++">
+                    C++
+                </label>
+                <input
+                id="C++"
+                name="C++"
+                type="checkbox">
+                <label for="php">
+                    PHP
+                </label>
+                <input
+                id="php"
+                name="php"
+                type="checkbox">
+                <label for="ruby">
+                    Ruby
+                </label>
+                <input
+                id="ruby"
+                name="ruby"
+                type="checkbox">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Frame Work Experience(select all that appies)
+                </legend>
+                <label for="react">
+                    React
+                </label>
+                <input
+                id="react"
+                name="react"
+                type="checkbox">
+                <label for="vue">
+                    Vue
+                </label>
+                <input
+                id="vue"
+                name="vue"
+                type="checkbox">
+                <label for="angular">
+                    Angular
+                </label>
+                <input
+                id="angular"
+                name="angular"
+                type="checkbox">
+                <label for="node.js">
+                    Node.js
+                </label>
+                <input
+                id="node.js"
+                name="node.js"
+                type="checkbox">
+                <label for="django">
+                    Django
+                </label>
+                <input
+                id="django"
+                name="django"
+                type="checkbox">
+                <label for="laravel">
+                    Laravel
+                </label>
+                <input
+                id="laravel"
+                name="laravel"
+                type="checkbox">
+            </fieldset>
+            <fieldset>
+                    <legend>
+                        Available For Remote Work
+                    </legend>
+                    <label for="yes">
+                        yes
+                    </label>
+                    <input
+                    id="yes"
+                    name="availability"
+                    value="yes"
+                    type="radio"
+                    required>
+                    <label for="no">
+                        No
+                    </label>
+                    <input
+                    id="no"
+                    name="availability"
+                    value="no"
+                    type="radio">
+                    <label for="hybrid">
+                        hybrid
+                    </label>
+                    <input
+                    id="hybrid"
+                    name="availability"
+                    value="hybrid"
+                    type="radio">
+                    <label for="Resume">
+                        Resume upload
+                    </label>
+                    <input
+                    id="resume upload"
+                    name="resume upload"
+                    type="file"
+                    placeholder="upload your resume"
+                    required>
+                    <label for="references">
+                        References available upon request?
+                    </label>
+                    <input
+                    id="references"
+                    name="references"
+                    type="checkbox"
+                    required>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Why Do You want to Work Here?
+                    </legend>
+                    <label for="reason">
+                        Reasons?
+                    </label>
+                    <textarea
+                id="reason"
+                name="reason"
+                required
+                placeholder="Why do you want to work with us?"
+                rows="5"
+                cols="50"></textarea>
+                    <label for="achievement">
+                        Discribe Your Biggest achievement
+                    </label>
+                    <textarea
+                    id="achievement"
+                    name="achievement"
+                    placeholder="Discribe your biggest acheivement"
+                    rows="5"
+                    cols="50"
+                    required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Legal
+                    </legend>
+                    <p>
+                        Authorised to Work in this Country
+                    </p>
+                    <label for="yes">
+                        yes
+                    </label>
+                    <input
+                    id="yes"
+                    name="Authorised"
+                    value="yes"
+                    type="radio"
+                    required>
+                    <label for="no">
+                        No
+                    </label>
+                    <input
+                    id="no"
+                    name="Authorised"
+                    value="no"
+                    type="radio">
+                    <label for="background check">
+                        Agreed to Background Check?
+                    </label>
+                    <input
+                    id="background check"
+                    name="background check"
+                    type="checkbox">
+                    <label for="acknoledgement">
+                        Acknowlede Application Accuracy?
+                    </label>
+                    <input
+                    id="acknoledgement"
+                    name="acknoledgement"
+                    type="checkbox"
+                    required>
+                </fieldset>
+                <fieldset>
+                <button type="submit">Register for course</button>
+                <button type="reset">Clear form</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
