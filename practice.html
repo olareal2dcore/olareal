@@ -4,9 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width =device width initial scale=1.0">
     <title>My First Week Learnig HTML</title>
+    <style>
+
+        body{ 
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6; 
+        margin: 0; 
+        padding: 16px; 
+        background-color: gray;
+        color: black;
+    }
+
+    header{
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        background-color: #444;
+        padding: 10px;
+    }
+    nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav li{
+        display: inline;
+        margin: 0 10px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+    nav a:hover{ text-decoration: underline;
+    }
+    main{
+        background-color: white;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    h2{
+        color: grey;
+        border-bottom: 2px solid grey;
+    }
+    h3{
+        color: #555;
+    }
+    p{
+        margin-bottom: 12px;
+    }
+    ul, ol{
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+    li{
+        margin-bottom: 5px;
+    }
+    main a{
+        text-decoration: none;
+        color: white;
+    }
+    main a:hover{
+        text-decoration: underline;
+    }
+    aside{
+        background-color: #333;
+        padding: 20px;
+        margin: 10px;
+        border-left: 4px solid gray
+    }
+    aside h3{
+        margin-top: 0;
+        color: white;
+    }
+    aside ul{
+        color: white;
+    }
+    aside p{
+        color: white;
+    }
+    footer{
+        background-color: #333;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+        padding: 15px;
+    }
+    footer a{
+        color: white;
+        text-decoration: underline;
+    }
+    image{
+        max-width: 100px;
+        height: auto;
+    }
+    figure{
+        margin: 20px 0;
+    }
+    figcaption{
+        font-style: italic;
+        color: gray;
+        margin-top: 2px;
+    }
+    .back-to-top {
+        position: fixed;
+        padding: 15px 20px;
+        background-color: #333;
+        bottom: 70px;
+        right: 30px;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .article-header {
+        position: relative;
+        padding-right: 100px;
+
+    }
+    .date-barge {
+        position: absolute;
+        top: 0;
+        right: 4px;
+        width: 80px;
+        text-align: center;
+        background-color: #444;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+     .date-barge .month {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        font-size: 12px;
+    }
+    .date-barge .day {
+        display: block;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 3px solid red;
+    }
+    .column {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        background-color: gray;
+    }
+    .column:first-child {
+        margin-right: 4%;
+    }
+    
+    </style>
 </head>
 <body>
-        <header>
+        <header class="fixed-header">
             <h1>My Coding Journey Blog</h1>
             <nav>
                 <ul>
@@ -19,10 +183,14 @@
         </header>
         <main>
             <article>
-                <header>
+                <header id="top" class="article-header">
                     <h2>
                         My First Week Learning HTML
                     </h2>
+                    <div class="date-barge">
+                        <span class="month">Febuary</span>
+                        <span class="day">13th</span>
+                    </div>
                     <p>
                         Published On <time datetime="2026-02-13">Febuary 13th 2026</time>
                     </p>
@@ -30,6 +198,15 @@
                         By: Saheed
                     </p>
                 </header>
+                 <div class="container">
+                        <div class="column">
+                            <h3>left column</h3>
+                             <p>content here</p>
+                        </div><div class="column">
+                            <h3>right column</h3>
+                            <p>content here</p>
+                        </div>
+                    </div>
                 <section>
                     <h3>
                         Introduction
@@ -52,7 +229,7 @@
                         Here is a Photo of Where I do all My coding
                     </p>
                     <figure>
-                        <img src="cover.jpg" alt="an image of an html">
+                        <img src="cover.jpg" alt="an image of an html" width="200">
                         <figcaption>
                             This is a local picture in my PC.
                         </figcaption>
@@ -106,9 +283,10 @@
                     </h3>
                 </aside>
             </article>
+            
         </main>
         <footer>
-            <section>
+            <section class="sticky-header">
                 <h2>
                     About this Blog
                     <p>
@@ -134,4 +312,8 @@
                     </p>
             </section>
         </footer>
+        <a href="#top" class="back-to-top">
+            ^ top
+        </a>
 </body>
+</html>

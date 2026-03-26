@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =device width initial scale=1.0">
+    <title>My First Week Learnig HTML</title>
+    <style>
+        body{ 
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6; 
+        margin: 0; 
+        padding: 16px; 
+        background-color: gray;
+        color: black;
+    }
+
+    header{
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        background-color: #444;
+        padding: 10px;
+    }
+    nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav li{
+        display: inline;
+        margin: 0 10px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+    nav a:hover{ text-decoration: underline;
+    }
+    /* 300px + padding 40px + border 10px
+    + margin 30px */
+     .box-example{
+        width: 300px;
+        height: 100px;
+        background-color: lightblue;
+        padding: 20px;
+        border: 5px solid darkblue;
+        box-sizing: border-box;    
+     }
+    .block{
+        width: 300px;
+        background-color: aquamarine;
+        margin-bottom: 20px;
+    } 
+
+    .inline{
+        background-color: aqua;
+        margin-bottom: 10px;
+        display: inline;
+        padding: 5px;
+    }
+    .inblock {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px;
+        padding: 20px;
+    }
+    .position-demo {
+        border: 3px dashed #999;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .box {
+        width: 150px;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: lightblue;
+        border: 2px solid darkblue;
+    }
+    .box2 {
+        position: relative;
+        top: 20px;
+        left: 60px;
+        background-color: lightcoral;
+
+    }
+    .button-with-bardge {
+        position: relative;
+        display: inline-block;
+
+    }
+    .button-with-bardge button {
+        padding: 10px 20px ;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+    }
+    .bardge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+
+    }
+    .box-overlap{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        padding: 20px;
+    }
+    .box-a{
+        background-color:  rgba(255, 0, 0, 0.6);
+        top: 20px;
+        left: 50px;
+        z-index: 1;
+    }
+    .box-b{
+        background-color:  rgba(0, 255, 0, 0.6);
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+    }
+    .box-c{
+        background-color:  rgba(0, 0, 255, 0.6);
+        top: 150px;
+        left: 150px;
+        z-index: 3;
+    }
+    .center-blog p {
+        border: 3px solid red;
+        margin: auto;
+
+    }
+    .center-text {
+        text-align: center;
+    }
+    .parent {
+        position: absolute;
+        height: 500px;
+    }
+    .center.absolute {
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        width: 200px;
+        height: 200px;
+        
+    }
+    </style>
+</head>
+<body>
+        <header class="fixed-header">
+            <h1>My Coding Journey Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="program.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>   
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <header>
+                    <h2>
+                        My First Week Learning HTML
+                    </h2>
+                    <p>
+                        Published On <time datetime="2026-02-13">Febuary 13th 2026</time>
+                    </p>
+                    <p>
+                        By: Saheed
+                    </p>
+                </header>
+            </article>
+            <div class="box-overlap box-a">box a-(z-index1)</div>
+            <div class="box-overlap box-b">box b-(z-index2)</div>
+            <div class="box-overlap box-c">box c-(z-index3)</div>
+
+            <div class="button-with-bardge">
+                <button>message</button>
+                <span class="bardge">5</span>
+            </div>
+            <div class="box example">
+
+                <div class="box-example">This a content inside the box</div>
+                
+
+                <div class="block">block 1</div>
+                <div class="block">block 2</div>
+                <div class="block">block 3</div>
+
+                <div class="inblock">block 1</div>
+                <div class="inblock">block 2</div>
+                <div class="inblock">block 3</div>
+
+                <div class="position-demo">
+                    <div class="box box1">box 1</div>
+                    <div class="box box2">box 2</div>
+                    <div class="box box3">box 3</div>
+                </div>
+                
+            </div>
+            <section class="center-blog">
+                    <h3 class="center-text">
+                        Introduction
+                    </h3>
+                    <p>
+                        It was nice parcticing my HTML class at Slim mentorship with Mr yusuf.
+                    </p>
+                    <p>
+                         <mark>
+                            The most important thing I learn  is that there will be alot of mistake.
+                         </mark>
+                         Every error teaches me somthing new.
+                    </p>
+                </section>
+                <section class="parent">
+                    <h3>
+                        My Work Space
+                    </h3>
+                    <p class="center-absolute">
+                        Here is a Photo of Where I do all My coding
+                    </p>
+                    <figure>
+                        <img src="cover.jpg" alt="an image of an html" width="200">
+                        <figcaption>
+                            This is a local picture in my PC.
+                        </figcaption>
+                    </figure>
+                </section>
+        </main>
+    </body>
+</html>    
